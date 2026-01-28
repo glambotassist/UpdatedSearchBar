@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GlamBot Search</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+        
         * {
             margin: 0;
             padding: 0;
@@ -12,7 +14,7 @@
         }
         
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Playfair Display', serif;
             background: transparent;
             padding: 20px;
         }
@@ -27,24 +29,26 @@
         .search-box {
             width: 100%;
             padding: 20px 80px 20px 80px;
-            border: 2px solid #e6c2d6;
+            border: 2px solid #c89fff;
             border-radius: 15px;
-            background: #f2dee9;
+            background: #d7afff;
             font-size: 18px;
-            color: ##7aa7ed;
+            color: #ffffff;
             outline: none;
-            box-shadow: 0 6px 15px rgba(242, 222, 233, 0.3);
+            box-shadow: 0 6px 15px rgba(215, 175, 255, 0.3);
             font-weight: 500;
+            font-family: 'Playfair Display', serif;
         }
         
         .search-box::placeholder {
-            color: rgba(45, 45, 45, 0.7);
+            color: #ffffff;
+            font-family: 'Playfair Display', serif;
         }
         
         .search-box:focus {
-            background: #ecd4e1;
-            border-color: #d9a8c7;
-            box-shadow: 0 8px 20px rgba(242, 222, 233, 0.5);
+            background: #c89fff;
+            border-color: #b87fff;
+            box-shadow: 0 8px 20px rgba(215, 175, 255, 0.5);
         }
         
         .search-icon {
@@ -98,11 +102,11 @@
             top: 100%;
             left: 0;
             right: 0;
-            background: #f2dee9;
-            border: 2px solid #e6c2d6;
+            background: #d7afff;
+            border: 2px solid #c89fff;
             border-radius: 15px;
             margin-top: 8px;
-            box-shadow: 0 8px 25px rgba(242, 222, 233, 0.4);
+            box-shadow: 0 8px 25px rgba(215, 175, 255, 0.4);
             max-height: 400px;
             overflow-y: auto;
             z-index: 1000;
@@ -112,15 +116,16 @@
         .result-item {
             padding: 18px 25px;
             cursor: pointer;
-            border-bottom: 1px solid #e6c2d6;
-            color: #2d2d2d;
+            border-bottom: 1px solid #c89fff;
+            color: #ffffff;
             font-size: 16px;
             font-weight: 500;
+            font-family: 'Playfair Display', serif;
         }
         
         .result-item:hover {
-            background: #ecd4e1;
-            color: #1a1a1a;
+            background: #c89fff;
+            color: #ffffff;
         }
         
         .result-item:last-child {
